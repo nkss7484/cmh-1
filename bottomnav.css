@@ -1,0 +1,142 @@
+.fivepage{
+    background: #1e3250;
+}
+.bottomlink{
+    /* margin-top: 3rem; */
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    border-bottom: 1px solid white;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.universitylink{
+    position: relative;
+    top: 2rem;
+    
+}
+.universitylink p {
+    font-size: 2.5rem;
+    
+}
+.universitylink a{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2em;
+    position: relative;
+    top: 1.5rem;
+    color: white;
+    display: grid;
+    text-align: left;
+}
+.downloadlink{
+    position: relative;
+    top: 2rem;
+}
+.downloadlink p {
+    font-size: 2.5rem;
+    
+}
+.downloadlink a{
+    position: relative;
+    top: 1.5rem;
+    line-height: 2em;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    display: grid;
+    text-align: left;
+}
+.addresslink{
+    position: relative;
+    top: 2rem;
+}
+.addresslink p1{
+    font-size: 2.5rem;
+    
+}
+.addresslink p{
+    font-size: 1.5rem;
+    line-height: 2em;
+    position: relative;
+    top: 1.5rem;
+}
+.addresslink a{
+    /* font-family: "Josefin Sans", sans-serif; */
+    color: white;
+    display: grid;
+    text-align: left;
+}
+.addresslink h1{
+    line-height: 2em;
+}
+.addresslink h2{
+    margin-top: 1.2rem;
+}
+.contactlink{
+    font-size: 1.5rem;
+    line-height: 2em;
+    margin-top: 2rem;
+}
+.medialink{
+    
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+.copyright{
+    height: 30px;
+    margin-top: 0.5rem;
+}
+.copyright p{
+    font-size: small;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+@media screen and (max-width: 550px) {
+
+    .bottomlink{
+        display: grid;
+        gap: 20px;
+    }
+   
+  }
+
+  /* contactus page */
+
+.contactpage{
+    background-image: linear-gradient(rgba(255,255,255,1.5),
+                                     rgba(255,255,255,0.5)),
+                                        url(caraousel1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+  .contactus{
+    display: flex;
+    margin: auto;
+    width: 90%;
+  }
+  .contactpage p{
+    font-size: 4rem;
+    justify-content: center;
+    display: flex;
+    font-weight: 800;
+    font-family: fangsong;
+  }
+  .contactdetail{
+    color: white;
+   margin: auto;
+   gap: 40px;
+    display: grid;
+    align-items: center;
+  }
+  .phone-number{
+   background-color: #1e3250;   
+  }
+  .email-id{
+    background-color: #1e3250;   
+  }

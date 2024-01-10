@@ -1,0 +1,496 @@
+
+
+/* @media screen and (max-width: 25em) {
+	.codrops-header {
+		font-size: 75%;
+	}
+	.codrops-icon span {
+		display: none;
+	}
+} */
+.topadmin h2{
+	font-size: 4rem;
+	justify-content: center;
+	display: flex;
+	font-weight: 800;
+	font-family: fangsong;
+
+}
+/* .nav2 a{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+} */
+.adminnav{
+	line-height: 5rem;
+	margin-bottom: 6rem;
+	margin-top: 3rem;
+	text-align: center;
+	/* border-bottom: 1px solid black; */
+	font-size: 2.2rem;
+	font-weight: 800;
+	font-family: fangsong;
+	margin-left: 5rem;
+	margin-right: 5rem;
+}
+.adminnav a{
+	padding: 10px;
+    border: 0px solid gray;
+	/* flex-wrap: wrap; */
+	margin-right: 1.5rem;
+	text-decoration: none;
+	color: white;
+	border-radius: 15px;
+	background: #1e3250;
+}
+
+ a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+	color: blue;
+	
+}
+
+.topadmin{
+	position: relative;
+	top: 3rem;
+}
+.page1{
+	position: relative;
+	height: 100%;
+}
+
+.fullpage{
+    background-image: linear-gradient(rgba(255,255,255,1),
+                                   rgba(255,255,255,0.5)),
+                                      url(caraousel1.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.adminphoto{
+    width: 50%;
+    margin: auto;
+}
+.grid {
+	/* margin-top: 3rem;
+	margin-left: -2rem;
+	gap: 10px; */
+	/* position: relative; */
+	/* clear: both; */
+	/* margin: 0 auto; */
+	/* padding: 10px; */
+	/* max-width: 1000px; */
+	/* list-style: none;
+	text-align: center;
+    display: flex;
+    */
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 200vh; */
+}
+
+/* Common style */
+.grid figure {
+	position: relative;
+    /* float: left; */
+    overflow: hidden;
+    margin: auto;
+    min-width: 350px;
+    max-width: 350px;
+    max-height: 400px;
+    width: 50%;
+    /* height: auto; */
+    background: #3085a3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	/* opacity: 0.8; */
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #dad3d3;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+
+.grid figure h2 span {
+	font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+	margin: 0;
+}
+
+.grid figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+figure.effect-goliath {
+    height: 40rem;
+    border-radius: 30px;
+	background: rgb(238, 158, 158);
+}
+
+/* figure.effect-goliath img, */
+figure.effect-goliath h2 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+/* figure.effect-goliath img, */
+figure.effect-goliath h6 {
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+/* figure.effect-goliath img {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+} */
+
+figure.effect-goliath h2,
+figure.effect-goliath p {
+	font-size: 20px;
+    width: 100%;
+	position: absolute;
+	font-weight: 700;
+	text-transform: capitalize;
+	bottom: 0;
+	left: 0;
+	padding:21px;
+    background: white;
+    color: black;
+}
+figure.effect-goliath h6{
+	font-size: 15px;
+    width: 100%;
+	position: absolute;
+	bottom: 0;
+	text-transform: capitalize;
+	left: 0;
+	/* padding: 30px; */
+    background: white;
+    color: rgb(132, 24, 239);
+}
+figure.effect-goliath p {
+	text-transform: none;
+	font-size: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(0,50px,0);
+	transform: translate3d(0,50px,0);
+}
+
+/* figure.effect-goliath:hover img {
+	-webkit-transform: translate3d(0,-80px,0);
+	transform: translate3d(0,-80px,0);
+} */
+
+figure.effect-goliath:hover h2 {
+	-webkit-transform: translate3d(0,-100px,0);
+	transform: translate3d(0,-100px,0);
+}
+figure.effect-goliath:hover h6 {
+	-webkit-transform: translate3d(0,-100px,0);
+	transform: translate3d(0,-100px,0);
+}
+
+figure.effect-goliath:hover p {
+    background-color: white;
+	font-size: 11px;
+	font-weight: 100;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #573a11;
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.former p{
+	justify-content: center;
+    display: flex;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+
+
+/* gallery */
+
+.gallerytop h4{
+	position: relative;
+	top: 3rem;
+	justify-content: center;
+    display: flex;
+	margin-bottom: 5rem;
+    font-size: 4rem;
+    color: black;
+    font-family: auto;
+    font-weight: 700;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.gallery-item {
+    flex-basis: 32.7%;
+    margin-bottom: 6px;
+    opacity: .85;
+    cursor: pointer;
+}
+.gallery-item:hover {
+    opacity: 1;
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-content {
+    font-size: .8em;
+}
+
+.lightbox {
+    position: fixed;
+	margin-top: 5rem;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;              
+    overflow: auto;
+    top: 0;
+    left: 0;
+}
+.lightbox-content {
+	/* margin-top: 15rem; */
+    position: relative;
+    width: 70%;
+    height: 70%;
+    margin: 5% auto;
+}
+.lightbox-content img {
+    border-radius: 7px;
+    box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 7px;
+    top: 45%;
+    cursor: pointer;
+}
+.lightbox-prev {
+    left: 0;
+}
+.lightbox-next {
+    right: 0;
+}
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    opacity: .8;
+}
+
+@media (max-width: 767px) {
+    .gallery-container {
+        width: 100%;
+    }
+    .gallery-item {
+        flex-basis: 49.80%;
+        margin-bottom: 3px;
+    }
+    .lightbox-content {
+        width: 80%;
+        height: 60%;
+        margin: 15% auto;
+    }
+}
+@media (max-width: 480px) {
+    .gallery-item {
+        flex-basis: 100%;
+        margin-bottom: 1px;
+    }
+    .lightbox-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+}
+
+@media (max-width: 1100px) {
+	.grid{
+		display: grid;
+		gap: 10px;
+	}
+    
+}
+
+
+
+/* borders */
+/* CSS for responsive iframe */
+/* ========================= */
+
+/* outer wrapper: set max-width & max-height; max-height greater than padding-bottom % will be ineffective and height will = padding-bottom % of max-width */
+#Iframe-Master-CC-and-Rs {
+	max-width: 512px;
+	max-height: 100%; 
+	overflow: hidden;
+  }
+  
+  /* inner wrapper: make responsive */
+  .responsive-wrapper {
+	position: relative;
+	height: 0;    /* gets height from padding-bottom */
+	
+	/* put following styles (necessary for overflow and scrolling handling on mobile devices) inline in .responsive-wrapper around iframe because not stable in CSS:
+	  -webkit-overflow-scrolling: touch; overflow: auto; */
+	
+  }
+   
+  .responsive-wrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	
+	margin: 0;
+	padding: 0;
+	border: none;
+  }
+  
+  /* padding-bottom = h/w as % -- sets aspect ratio */
+  /* YouTube video aspect ratio */
+  .responsive-wrapper-wxh-572x612 {
+	padding-bottom: 107%;
+  }
+  
+  /* general styles */
+  /* ============== */
+  .set-border {
+	border: 5px inset #4f4f4f;
+  }
+  .set-box-shadow { 
+	-webkit-box-shadow: 4px 4px 14px #4f4f4f;
+	-moz-box-shadow: 4px 4px 14px #4f4f4f;
+	box-shadow: 4px 4px 14px #4f4f4f;
+  }
+  .set-padding {
+	padding: 10px;
+  }
+  .set-margin {
+	margin: 30px;
+  }
+  .center-block-horiz {
+	margin-left: auto !important;
+	margin-right: auto !important;
+  }
+  .bordertop{
+	background-image: linear-gradient(rgba(255,255,255,1),
+                                   rgba(255,255,255,0.5)),
+                                      url(caraousel1.jpg);
+	background-size: cover;
+	padding: 30px;
+
+  }
+  .bordertop h2{
+	margin-top: 3rem;
+	justify-content: center;
+	display: flex;
+    font-size: 5rem;
+	margin-bottom: 3rem;
+	text-decoration: underline;
+  }
+  
+
+  /* admin body */
+.formeradmin{
+	margin-bottom: 5rem;
+}
+.topadmin h3{
+	margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 3rem;
+	margin-bottom: 2rem;
+  }
+  .fwarden h3{
+	margin: auto;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 3rem;
+	margin-bottom: 2rem;
+  }
+  table {
+	margin-bottom: 10rem;
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 90%;
+	margin: auto;
+  }
+  /* img {
+	border-radius: 50%;
+  } */
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+	font-size: 15px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }

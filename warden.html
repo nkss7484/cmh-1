@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" href="hostel.css">
+     <link rel="stylesheet" href="admin.css">
+     <link rel="stylesheet" href="bottomnav.css">
+    <title>hostel</title>
+</head>
+
+
+<style>
+    .page {
+      display: none;
+    }
+  </style>
+  <script>
+    function showPage(pageId) {
+      const pages = document.querySelectorAll('.page');
+      for (const page of pages) {
+        page.style.display = 'none';
+      }
+  
+      const selectedPage = document.getElementById(pageId);
+      if (selectedPage) {
+        selectedPage.style.display = 'block';
+      }
+    }
+
+
+
+    window.onload = function() {
+    showPage('page1'); 
+  };
+
+
+  </script>
+  </head>
+  <body>
+    <header>
+        <div class="topheader">
+        <div class="menu-toggle" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+          <class class="logoimg"><img src="cmh-logo.png" alt style="width: 70px;"></class>
+          <class class="hostelname">Charaideo Men's Hostel</class>
+         </div>
+        <div class="overlay"></div>
+        <div class="topcontainer">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="warden.html">Adminstration</a></li>
+                    <li><a href="#">Achievement</a></li>
+                    <li><a href="#">facilities</a></li>
+                    <li><a href="border.html">Border</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+      </div>
+    </header>
+    
+    
+
+
+
+
+
+
+
+
+
+<div class="fullpage">
+    <div class="topadmin">
+        <h2>Administration</h2>
+<div class="adminnav">
+
+
+      <a href="#" onclick="showPage('page1');">Senior warden</a>
+      <a href="#" onclick="showPage('page2');">Warden</a>
+      <a href="#" onclick="showPage('page3');">Prefect</a>
+      <a href="#" onclick="showPage('page4');">Assistant Prefect</a>
+      <a href="#" onclick="showPage('page5');">Convener</a>
+      <!-- <a href="#" onclick="showPage('page6');">Wing Representative</a> -->
+      <a href="#" onclick="showPage('page7');">Staff</a>
+      <a href="#" onclick="showPage('page8');">Web Master</a>
+
+</div>
+    
+    <div id="page1" class="page">
+        <div class="grid">
+            <figure class="effect-goliath">
+                <img src="apurba.jpg" alt="img23"/>
+                <figcaption>
+                    <h2>Dr.Apurba Saha <h6>Senior Warden</h6></span></h2>
+                    <p>Assitant Profeser, <br>Departnment of CSE, <br>Tezpur university, <br>Mob:+91 7484057603</p>
+                </figcaption>			
+            </figure>
+        </div>
+        <div class="formeradmin">
+         <div class="fwarden">
+            <h3>Former Senior Warden</h3>
+         </div>
+            <table>
+              <tr>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Year</th>
+              </tr>
+              <tr>
+                <td><img src="hiteshSir.jpeg" alt="Avatar" style="width:40px; height: 40px; border-radius: 50%;"> Dr.Hitesh Sharma </td>
+                <td>Assitant Profeser, <br>
+                    Departnment of CSE</td>
+                <td>2016-2023</td>
+              </tr>
+            </table>
+        </div>  
+</div>
+
+
+
+    </div>
+    
+    <div id="page2" class="page">
+        <div class="grid">
+            <figure class="effect-goliath">
+                <img src="gopal.jpg" alt="img23"/>
+                <figcaption>
+                    <h2>Dr.Gopal Singh <h6>Warden</h6></span></h2>
+                    <p>Assitant Profeser, <br>Department of Education, <br>Tezpur university, <br>Mob:+91 7484057603</p>
+                </figcaption>			
+            </figure>
+        </div>
+        <div class="formeradmin">
+            <div class="fwarden">
+               <h3>Former Warden</h3>
+            </div>
+               <table>
+                 <tr>
+                   <th>Name</th>
+                   <th>Department</th>
+                   <th>Year</th>
+                 </tr>
+                 <tr>
+                   <td><img src="rajinderSir.jpeg" alt="Avatar" style="width:40px; height: 40px; border-radius: 50%;"> Dr.Rajinder Singh Sharma </td>
+                   <td>Assitant Profeser, <br>
+                       Departnment of CSE</td>
+                   <td>2016-2023</td>
+                 </tr>
+               </table>
+           </div>  
+</div>
+
+
+    <div id="page3" class="page">
+            <div class="grid">
+                <figure class="effect-goliath">
+                    <img src="sankalp.jpg" alt="img24"/>
+                    <figcaption>
+                        <h2>Sankalp Gogoi <h6>Prefect</h6></span></h2>
+                        <p>Departnment of EE, <br>Tezpur university, <br>Mob:+91 8135933443</p>
+                    </figcaption>			
+                </figure>
+            </div>
+            <div class="formeradmin">
+                <div class="fwarden">
+                   <h3>Former Prefect</h3>
+                </div>
+                   <table>
+                     <tr>
+                       <th>Name</th>
+                       <th>Department</th>
+                       <th>Year</th>
+                     </tr>
+                     <tr>
+                       <td><img src="indranujSharma.jpg" alt="Avatar" style="width:40px; height: 40px; border-radius: 50%;"> Indranuj Sharma </td>
+                       <td>Department of Mechanical Engineering</td>
+                       <td>2016-2023</td>
+                     </tr>
+                      <tr>
+                        <td><img src="indranujSharma.jpg" alt="Avatar" style="width:40px; height: 40px; border-radius: 50%;"> Subhasish Goswami </td>
+                        <td>Department of Computer Science and Engineering</td>
+                        <td>2016-2023</td>
+                      </tr>
+                   </table>
+            </div>  
+    </div>
+
+
+        <div id="page4" class="page">
+            <div class="grid">
+                <figure class="effect-goliath">
+                    <img src="jaydeep.jpg" alt="img23"/>
+                    <figcaption>
+                        <h2>Jaydeep Das <h6>Assistant Prefect</h6></span></h2>
+                        <p>Departnment of CSE, <br>Tezpur university, <br>Mob:+91 8638785424</p>
+                    </figcaption>			
+                </figure>
+
+
+                <figure class="effect-goliath">
+                    <img src="jubin.jpg" alt="img23"/>
+                    <figcaption>
+                        <h2>Jubin Das<h6>Assistant Prefect</h6></span></h2>
+                        <p>Departnment of Physics, <br>Tezpur university, <br>Mob:+91 9365218361</p>
+                    </figcaption>			
+                </figure>
+
+            </div>
+            <div class="formeradmin">
+                <div class="fwarden">
+                   <h3>Former Assistant Prefect</h3>
+                </div>
+                   <table>
+                     <tr>
+                       <th>Name</th>
+                       <th>Department</th>
+                       <th>Year</th>
+                     </tr>
+                     <tr>
+                       <td><img src="ajitKr.jpg" alt="Avatar" style="width:40px; height: 40px; border-radius: 50%;"> Ajit Kumar </td>
+                       <td>Department of Computer Science and Engineering</td>
+                       <td>2016-2023</td>
+                     </tr>
+                      <tr>
+                        <td><img src="rKashyap.jpg" alt="Avatar" style="width:40px; height: 40px; border-radius: 50%;"> Rishikesh Kashyap </td>
+                        <td>Department of Commerce</td>
+                        <td>2016-2023</td>
+                      </tr>
+                      <tr>
+                        <td><img src="ajitKr.jpg" alt="Avatar" style="width:40px; height: 40px; border-radius: 50%;"> Muzamil Bora </td>
+                        <td>Department of Food Engineering</td>
+                        <td>2016-2023</td>
+                      </tr>
+                       <tr>
+                         <td><img src="rKashyap.jpg" alt="Avatar" style="width:40px; height: 40px; border-radius: 50%;"> Sasanka Sutradhar </td>
+                         <td>Department of Food Engineering</td>
+                         <td>2016-2023</td>
+                       </tr>
+                   </table>
+               </div>  
+        </div>
+
+
+
+        <div id="page5" class="page">
+            <div class="grid">
+                <figure class="effect-goliath">
+                    <img src="dinesh.jpg" alt="img23"/>
+                    <figcaption>
+                        <h2>T.Dinesh<h6>Mess Convener</h6></span></h2>
+                        <p>Departnment of CSE, <br>Tezpur university, <br>Mob:+91 8686007959</p>
+                    </figcaption>			
+                </figure>
+
+
+                <figure class="effect-goliath">
+                    <img src="rathin.jpg" alt="img23"/>
+                    <figcaption>
+                        <h2>Rathin <h6>Auditor</h6></span></h2>
+                        <p>Departnment of Chemical Science, <br>Tezpur university, <br>Mob:+91 7086855276</p>
+                    </figcaption>			
+                </figure>
+
+
+                <figure class="effect-goliath">
+                    <img src="manas.jpg" alt="img23"/>
+                    <figcaption>
+                        <h2>Manas <h6>Mess Convener</h6></span></h2>
+                        <p>Departnment of CSE, <br>Tezpur university, <br>Mob:+91 7484057603</p>
+                    </figcaption>			
+                </figure>
+
+            </div>
+
+            <div class="formeradmin">
+                <div class="fwarden">
+                   <h3>Former Convener</h3>
+                </div>
+                   <table>
+                     <tr>
+                       <th>Name</th>
+                       <th>Department</th>
+                       <th>Year</th>
+                     </tr>
+                     <tr>
+                       <td><img src="parthopDutta.jpg" alt="Avatar" style="width:40px; height: 40px; border-radius: 50%;"> Partha P. Dutta </td>
+                       <td>Department of Chemical Sciences</td>
+                       <td>2022-2023</td>
+                     </tr>
+                      <tr>
+                        <td><img src="#" alt="Avatar" style="width:40px; height: 40px; border-radius: 50%;"> Mithuraj Borgohain </td>
+                        <td>Department of Food Engineering</td>
+                        <td>2021-2022</td>
+                      </tr>
+                   </table>
+               </div>  
+
+            
+        </div>
+
+
+<!-- Webmaster -->
+
+<div id="page8" class="page">
+    <div class="grid">
+        <figure class="effect-goliath">
+            <img src="nitish.jpg" alt="img23"/>
+            <figcaption>
+                <h2>Nitish Priyadarshi<h6>Web Developer</h6></span></h2>
+                <p>Departnment of Civil Eng., <br>Tezpur university, <br>Mob:+91 7484057603</p>
+            </figcaption>			
+        </figure>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="fivepage">
+    <div class="bottomlink">
+      <div class="universitylink"><p>University Links</p>
+        <a href="https://www.w3schools.com">Tezpur University</a>
+        <a href="https://www.w3schools.com"> TU News & Notifications</a>
+        <a href="https://www.w3schools.com">  Central Library</a>
+        <a href="https://www.w3schools.com">  Bus Timings</a>
+        <a href="https://www.w3schools.com">  Holiday List</a>
+      
+      </div>
+      <div class="downloadlink"><p>Download Links</p>
+        <a href="https://www.w3schools.com"> Hostel Accomadation Form</a>
+        <a href="https://www.w3schools.com">  Guest Accomadation Form</a>
+        <a href="https://www.w3schools.com">   Hostel Rules</a>
+        <a href="https://www.w3schools.com">  Hostel Clearance Form</a>
+        <a href="https://www.w3schools.com">  Leave Form</a>
+      </div>
+      <div class="addresslink">
+        <p1>Address</p1>
+       <p>Charaideo Men's Hostel <br>
+        Tezpur University, <br>
+        Napaam, Tezpur - 784028</p>
+        <div class="contactlink">
+          <i class="fa fa-envelope"> nkss00740@gmail.com</i><br>
+          <i class="fa fa-phone"> +91 7484057603</i>
+        </div>
+        
+        <h1>Follow Us</h1>
+        <div class="medialink">
+         
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+        
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p> &#169; 2023 Charaideo men's hostel,Tezpur University</p>
+    
+    </div>
+    </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+   
+  <!-- </body>
+  </html> -->
+ 
+  
+  
+  
+  
+<script src="hostel.js"></script>
+
+</body>
+</html>
